@@ -1,4 +1,3 @@
-# TODO:  Find a better way to separate build configs for ADP vs non-ADP devices
-ifneq ($(BOARD_IS_AUTOMOTIVE),true)
+ifeq ($(call my-dir),$(call project-path-for,wlan))
 include $(call all-subdir-makefiles)
 endif
