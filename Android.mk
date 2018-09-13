@@ -3,3 +3,4 @@ ifneq ($(TARGET_QCOM_WLAN_VARIANT),wlan-caf)
 ifneq ($(BOARD_IS_AUTOMOTIVE),true)
 include $(call all-subdir-makefiles)
 endif
+endif
